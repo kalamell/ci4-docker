@@ -1,0 +1,8 @@
+services:
+  cigniter-docker:
+    container_name: ci4-docker
+    build: .
+    volumes:
+      - ./webapp:/var/www/html
+    ports:
+      - 8080:8080
